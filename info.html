@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+         body{
+            background-image: url('背景3.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .search {
+            text-align: right;
+        }
+        .head-icon{
+            width: 130px;
+            height: 130px;
+
+        }
+        .search input {
+            outline: none;
+            border-radius: 10px;
+        }
+        .nav{
+            text-align: center;
+            
+        }
+        .nav p{
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+        .nav .list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .nav li {
+            text-align: center;
+            margin: 5px 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 40px;
+            width: 210px;   
+        }
+        .nav li:nth-child(1){
+            background-image: url('个人信息.png');
+
+        }
+        .nav li:nth-child(2){
+            background-image: url('我的邮箱.png');
+
+        }
+        .nav li:nth-child(3){
+            background-image: url('下载中心.png');
+
+        }
+        .nav li:nth-child(4){
+            background-image: url('统一身份认证.png');
+            width: 210px;
+            margin-left: 80px;
+            border-radius: 20px;
+
+        }
+        .search input{
+            width: 130px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main-title">
+            <img class="logo" src="logo.png" />
+            <div>
+                <p style="font-weight: bold;">SCHOOL OF<br> MEDIA AND DESIGN</p>
+                <h3 style="color: #004A79;">人文艺术与数字媒体学院</h3>
+            </div>
+        </div>
+        <div class="tool">
+            <img class="lend-btn" src="导航栏.png" alt="">
+               <img src="用户.png" alt="">
+                <ul class="lender-list">
+                <li>
+                    <a href="about.html">学院概述</a>
+                </li>
+                <li>
+                    <a href="#">学院资讯</a>
+                </li>
+                <li>
+                    <a href="#">学院师资</a>
+                </li>
+                <li>
+                    <a href="#">机构设置</a>
+                </li>
+                <li>
+                    <a href="#">科学研究</a>
+                </li>
+                <li>
+                    <a href="#">教学信息</a>
+                </li>
+                <li>
+                    <a href="#">实验室建设</a>
+                </li>
+                <li>
+                    <a href="#">招生就业</a>
+                </li>
+                <li>
+                    <a href="#">学生天地</a>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+        
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="nav">
+        <img class="head-icon" src="用户头像.png" alt="">
+        <br>
+        <h3 style="color: #004A79;">用户名</h3>
+        <br>
+        <ul class="list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <img src="logo.png" alt="logo" style="width: 50px; height: 50px;">
+        <p>SCHOOL OF MEDIA AND DESIGN<br>人文艺术与数字媒体学院</p>
+        <p style="color: black;">—————————————————————————————————</p>
+        <p>版权所有————————</p>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js"> </script>
+    <script>
+        $('.lend-btn').click(() => {
+            let status = $('.lender-list')[0].style.display
+            if(status == 'block') $('.lender-list').hide(1000)
+            else $('.lender-list').show(1000)
+
+        })
+    </script>
+</body>
+
+</html>

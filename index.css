@@ -1,0 +1,301 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+font-family: '微软雅黑';
+background-color: #98D3A020;
+}
+
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 12px;
+    background-image: url('上设计框.png');
+}
+
+.header .logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header .main-title {
+    display: flex;
+    align-items: center;
+}
+.text-nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.text-nav li{
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+
+}
+.tool{
+    margin-right: 10px;
+}
+.tool img{
+    width: 25px;
+    height: 25px;
+
+}
+.lender-list{
+    width: 100vw;
+    height: 100%;
+    background-image: url('背景2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 99;
+    padding: 30px;
+    display: none;
+}
+.lender-list > li {
+    border-bottom: 2px solid #004A79;
+    margin: 5px 0;
+}
+.lender-list > li > a{
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    background-color: #004A79;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: -20px;
+}
+.text-nav a{
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+.text-nav .bg1{
+    background-color: #004A79;
+}
+.text-nav .bg2{
+    background-color: #64ADB1 ;
+}
+.text-nav .bg3{
+    background-color: #98D3A0;
+}
+.text-nav .bg4{
+    background-color: #D8E480;
+}
+.main-img{
+    height: 300px;
+    position: relative;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+}
+.search-box{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.point{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.point li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #64ADB1;
+    box-shadow: 0 3px 8px #eee inset;
+    margin: 0 6px;
+    float: left;
+}
+.point .active{
+    background-color: #64ADB140;
+}
+h3{
+    text-align: center;
+}
+.title{
+    font-size: 18px;
+    color: #64ADB1;
+    border-bottom: 1px solid #64ADB1;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+.sm-title{
+    color: #004A79;
+    font-size: 15px;
+    font-weight: 500;
+}
+.info-list{
+    padding: 10px;
+}
+.info-list p{
+    text-shadow: 0 3px 8px #004A79;
+}
+.info-list li{
+    border-radius: 20px;
+    height: 80px;
+    box-shadow: 0 3px 8px lightgray;
+    padding: 10px 0 0 6px;
+    margin: 10px 0;
+}
+.info-list > li{
+    background-image:url('37a72072-caf5-4507-a8ae-79927369d3fc.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.info-list li:first-child{
+    background-image: url('main-img2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left center;
+    position: relative;
+}
+.info-list li:nth-child(2){
+    background-image: url('框1.png');
+}
+.info-list li:nth-child(3){
+    background-image: url('框2.png');
+}
+.info-list li:nth-child(4){
+    background-image: url('框3.png');
+}
+
+.info-list .point li{
+    float: left;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+}
+.info-list .tip{
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+.culture-list{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin: 20px 0;
+}
+.culture-list li{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    line-height: 1.2;
+    width: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin: 0 5px;
+}
+.culture-list li:nth-child(1){
+    background-image: url('37a72072-caf5-4507-a8ae-79927369d3fc.png');
+}
+.culture-list li:nth-child(2){
+    background-image: url('微信图片_20240501165016.png');
+}
+.culture-list li:nth-child(3){
+    background-image: url('main-img3.jpg');
+}
+.culture-list li:nth-child(4){
+    background-image: url('main-img4.jpg');
+}
+.culture-list li:nth-child(2n){
+    margin-top: 20px;
+}
+.teacher-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teacher-list .list li{
+    margin: 10px 0;
+
+}
+.teacher-list .img{
+    width: 270px;
+    height: 250px;
+    background-image: url('教师照片卡（有字版）.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 8px;
+    
+}
+.teacher-list .list a{
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    background-color: #004A79;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.img-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('友情链接.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    margin: 20px auto;
+}
+.img-list li img{
+    border-radius: 20px;
+    width: 140px;
+    height: 70px;
+    margin: 5px 0;
+}
+.img-list .img{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.footer{
+    background-image: url('封底.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    color: #004A79;
+    font-weight: bold;
+}
